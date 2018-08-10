@@ -1,0 +1,152 @@
+$gray: #ccc
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body,
+html
+  font-family: 'Ubuntu', sans-serif
+  background-color: #cccccc20
+
+.container
+  margin: 0 auto
+  width: 80%
+  max-width: 1300px
+
+h1, h2, h3, h4, h5, h6, label
+  font-weight: 500
+  color: #0058cc
+
+//Utilities
+.w100
+  width: 100%
+.w90
+  width: 90%
+.w80
+  width: 80%
+.w70
+  width: 70%
+.w60
+  width: 60%
+.w50
+  width: 50%
+.w45
+  width: 45%
+.w40
+  width: 40%
+.w30
+  width: 30%
+.w20
+  width: 20%
+.w10
+  width: 10%
+
+.mt50
+  margin-top: 50px
+.mt90
+  margin-top: 90px
+
+.f-right
+  float: right
+.f-left
+  float: left
+.clearfix
+  clear: both
+
+// box
+.box
+  position: absolute
+  padding: 70px 120px
+  width: 80%
+  background-color: #fff 
+  max-width: 650px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  box-shadow: 1px 1px 5px #00adff30
+  border-radius: 8px
+  label
+    display: inline-block
+    color: #0058cc
+    font-weight: 400
+    margin-bottom: 5px
+  input, select
+    font-family: 'Ubuntu', sans-serif
+    padding: 20px
+    font-size: 1em
+    display: block
+    width: 100%
+    border: 1px solid #ccc
+    border-radius: 2px
+    outline: none
+    &:focus
+      border: 1px solid #33beff
+    &.error-focus:focus
+      border: 1px solid red
+  .error
+    display: inline-block
+    color: red
+    margin-top: 5px
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none
+    margin: 0
+
+.btn
+  padding: 18px
+  border-radius: 3px
+  border: 1px solid transparent
+  font-size: 1em
+  &.btn-fill-blue
+    background-color: #0058cc
+    color: #fff
+  &.btn-border-blue
+    background-color: #fff
+    color: #0058cc
+    border: 1px solid #0058cc
+  &.disabled
+    opacity: .6
+
+.badge
+  margin-left: 25px
+  display: inline-block
+  position: relative
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  border: 1px solid #1dd8cf
+  background-color: #fff
+  z-index: 2
+  &:first-child
+    margin-left: 0
+  &.line:before
+    content: ''
+    width: 26px
+    height: 1px
+    background-color: #1dd8cf
+    position: absolute
+    left: -26px
+    top: 50%
+    z-index: 1
+  &.active
+    background-color: #1dd8cf
+    span
+      color: #fff
+  span
+    font-weight: 700
+    color: #1dd8cf
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.success-icon
+    text-align: center
+    display: block
+    i
+      font-size: 10em
+      margin-bottom: 40px
+      color: #1dd8cf
