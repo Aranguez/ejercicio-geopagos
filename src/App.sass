@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6, label
 
 .mt50
   margin-top: 50px
+  @media screen and (max-width: 400px)
+    margin-top: 20px
+.mb50
+  margin-bottom: 50px
 .mt90
   margin-top: 90px
 
@@ -67,6 +71,21 @@ h1, h2, h3, h4, h5, h6, label
   transform: translate(-50%, -50%)
   box-shadow: 1px 1px 5px #00adff30
   border-radius: 8px
+  @media screen and (max-width: 400px)
+    padding: 20px
+    background: none
+    box-shadow: 0px 0px 0px
+    h1.f-left
+      float: none
+      text-align: center
+      display: block
+      margin-bottom: 20px
+    .numeros.f-right
+      float: none
+      text-align: center
+      display: block
+    form.mt90
+      margin-top: 30px
   label
     display: inline-block
     color: #0058cc
@@ -85,6 +104,8 @@ h1, h2, h3, h4, h5, h6, label
       border: 1px solid #33beff
     &.error-focus:focus
       border: 1px solid red
+    @media screen and (max-width: 400px)
+      padding: 12px
   .error
     display: inline-block
     color: red
@@ -100,6 +121,8 @@ h1, h2, h3, h4, h5, h6, label
   border-radius: 3px
   border: 1px solid transparent
   font-size: 1em
+  @media screen and (max-width: 400px)
+    padding: 12px
   &.btn-fill-blue
     background-color: #0058cc
     color: #fff
